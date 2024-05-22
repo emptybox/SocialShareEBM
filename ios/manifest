@@ -1,0 +1,19 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: arm64 x86_64
+mac: true
+description: ShareImage
+author: Empty Box Media
+license: Specify your license
+copyright: Copyright (c) 2024 by Empty Box Media
+
+# these should not be edited
+name: ShareImage
+moduleid: com.ebm.shareimage
+guid: a177a0dd-bc91-4fe7-8abb-d869240544e8
+platform: iphone
+minsdk: 12.3.0.GA
