@@ -26,7 +26,6 @@
 		24DD6CFA1134B3F500162E58 /* ComEbmShareimageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComEbmShareimageModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComEbmShareimageModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComEbmShareimageModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* ComEbmShareimageModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComEbmShareimageModuleAssets.m */; };
-		371AE2FC2BFE816E0048E9F1 /* ShareImageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 371AE2FB2BFE816D0048E9F1 /* ShareImageModule.m */; };
 		371AE2FE2BFE885D0048E9F1 /* ShareImageModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 371AE2FD2BFE885D0048E9F1 /* ShareImageModule.h */; };
 		AA747D9F0F9514B9006C5449 /* ComEbmShareimage_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComEbmShareimage_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -49,7 +48,6 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* ComEbmShareimageModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComEbmShareimageModuleAssets.h; path = Classes/ComEbmShareimageModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* ComEbmShareimageModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComEbmShareimageModuleAssets.m; path = Classes/ComEbmShareimageModuleAssets.m; sourceTree = "<group>"; };
-		371AE2FB2BFE816D0048E9F1 /* ShareImageModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ShareImageModule.m; path = Classes/ShareImageModule.m; sourceTree = "<group>"; };
 		371AE2FD2BFE885D0048E9F1 /* ShareImageModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShareImageModule.h; path = Classes/ShareImageModule.h; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComEbmShareimage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComEbmShareimage_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,7 +103,6 @@
 				24DE9E1011C5FE74003F90F6 /* ComEbmShareimageModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComEbmShareimageModule.h */,
 				24DD6CF81134B3F500162E58 /* ComEbmShareimageModule.m */,
-				371AE2FB2BFE816D0048E9F1 /* ShareImageModule.m */,
 				371AE2FD2BFE885D0048E9F1 /* ShareImageModule.h */,
 			);
 			name = Classes;
@@ -202,7 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371AE2FC2BFE816E0048E9F1 /* ShareImageModule.m in Sources */,
 				24DD6CFA1134B3F500162E58 /* ComEbmShareimageModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* ComEbmShareimageModuleAssets.m in Sources */,
 			);

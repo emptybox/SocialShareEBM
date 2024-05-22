@@ -42,12 +42,26 @@
 - (void)share:(id)args {
     ENSURE_SINGLE_ARG(args, NSDictionary);
 
-    NSString *text = [TiUtils stringValue:@"text" properties:args];
+    NSString *text = [TiUtils stringValue:@"text" properties:args def:nil];
     TiBlob *imageBlob = [args objectForKey:@"image"];
     KrollCallback *callback = [args objectForKey:@"callback"];
     
-    UIImage *image = [imageBlob image];
-    NSArray *activityItems = @[text, image];
+    NSMutableArray *activityItems = [NSMutableArray array];
+    if (text != nil) {
+        [activityItems addObject:text];
+    }
+    if (imageBlob != nil) {
+        UIImage *image = [imageBlob image];
+        [activityItems addObject:image];
+    }
+
+    if ([activityItems count] == 0) {
+        if (callback != nil) {
+            NSDictionary *event = @{@"success": @(NO), @"message": @"No content to share"};
+            [self _fireEventToListener:@"callback" withObject:event listener:callback thisObject:nil];
+        }
+        return;
+    }
 
     dispatch_async(dispatch_get_main_queue(), ^{
         UIViewController *rootViewController = [[TiApp app] controller];
